@@ -4,7 +4,7 @@ import GamesCell from 'src/components/GamesCell'
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 41% 60%;
 `
 
 const HomePage = () => {

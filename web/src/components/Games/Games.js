@@ -1,6 +1,7 @@
 import { useMutation } from '@redwoodjs/web'
 import { Link, routes } from '@redwoodjs/router'
 import Card from 'src/components/Card'
+import Microlink from '@microlink/react'
 
 const DELETE_GAME_MUTATION = gql`
   mutation DeleteGameMutation($id: Int!) {
@@ -42,9 +43,7 @@ const GamesList = ({ games }) => {
       <table className="table-auto w-full min-w-3xl text-sm">
         <thead>
           <tr className="bg-gray-300 text-gray-700">
-            <th className="font-semibold text-left p-3">id</th>
             <th className="font-semibold text-left p-3">title</th>
-            <th className="font-semibold text-left p-3">bgglink</th>
             <th className="font-semibold text-left p-3">createdAt</th>
             <th className="font-semibold text-left p-3">&nbsp;</th>
           </tr>
@@ -55,9 +54,7 @@ const GamesList = ({ games }) => {
               key={game.id}
               className="odd:bg-gray-100 even:bg-white border-t"
             >
-              <td className="p-3">{truncate(game.id)}</td>
-              <td className="p-3"><Card title={truncate(game.title)} /></td>
-              <td className="p-3"><a href={truncate(game.bgglink)}>boardgamegeek</a></td>
+              <td className="p-3"><Card title={truncate(game.title)} bgglink={game.bgglink} /></td>
               <td className="p-3">{timeTag(game.createdAt)}</td>
               <td className="p-3 pr-4 text-right whitespace-no-wrap">
                 <nav>
