@@ -1,6 +1,7 @@
 import image from 'web/public/images/rocket.png'
 import styled from 'styled-components'
 import GamesCell from 'src/components/GamesCell'
+import HomeLayout from 'src/layouts/HomeLayout'
 
 const Container = styled.div`
   display: grid;
@@ -9,13 +10,15 @@ const Container = styled.div`
 
 const HomePage = () => {
   return (
-    <Container>
-      <img alt="Rocket image" src={image} />
-      <div>
-        <h1>Log Quest</h1>
-        <GamesCell />
-      </div>
-    </Container>
+    <HomeLayout>
+      <Container>
+        <img alt="Rocket image" src={image} />
+        <div>
+          <h2>Games</h2>
+          <GamesCell />
+        </div>
+      </Container>
+    </HomeLayout>
   )
 }
 
