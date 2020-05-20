@@ -43,8 +43,7 @@ const GamesList = ({ games }) => {
       <table className="table-auto w-full min-w-3xl text-sm">
         <thead>
           <tr className="bg-gray-300 text-gray-700">
-            <th className="font-semibold text-left p-3">title</th>
-            <th className="font-semibold text-left p-3">createdAt</th>
+            <th className="font-semibold text-left p-3"></th>
             <th className="font-semibold text-left p-3">&nbsp;</th>
           </tr>
         </thead>
@@ -57,7 +56,6 @@ const GamesList = ({ games }) => {
               <td className="p-3">
                 <Card {...game} title={truncate(game.title)} />
               </td>
-              <td className="p-3">{timeTag(game.createdAt)}</td>
               <td className="p-3 pr-4 text-right whitespace-no-wrap">
                 <nav>
                   <ul>
@@ -67,7 +65,7 @@ const GamesList = ({ games }) => {
                         title={'Show game ' + game.id + ' detail'}
                         className="text-xs bg-gray-100 text-gray-600 hover:bg-gray-600 hover:text-white rounded-sm px-2 py-1 uppercase font-semibold tracking-wide"
                       >
-                        Show
+                        <img alt="Light Bulb" width="70px"src="public/images/light-bulb.svg" />
                       </Link>
                     </li>
                     <li className="inline-block">
@@ -76,7 +74,7 @@ const GamesList = ({ games }) => {
                         title={'Edit game ' + game.id}
                         className="text-xs bg-gray-100 text-blue-600 hover:bg-blue-600 hover:text-white rounded-sm px-2 py-1 uppercase font-semibold tracking-wide"
                       >
-                        Edit
+                        <img alt="Pencil" width="70px" src="public/images/color-pencil.svg" />
                       </Link>
                     </li>
                     <li className="inline-block">
@@ -86,7 +84,7 @@ const GamesList = ({ games }) => {
                         className="text-xs bg-gray-100 text-red-600 hover:bg-red-600 hover:text-white rounded-sm px-2 py-1 uppercase font-semibold tracking-wide"
                         onClick={() => onDeleteClick(game.id)}
                       >
-                        Delete
+                        <img alt="Trash" width="65px" src="public/images/trash.svg" />
                       </a>
                     </li>
                   </ul>

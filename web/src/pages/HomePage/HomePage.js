@@ -6,6 +6,7 @@ import HomeLayout from 'src/layouts/HomeLayout'
 const Container = styled.div`
   display: grid;
   grid-template-columns: 41% 60%;
+  margin-top: 90px;
 `
 
 const HomePage = () => {
@@ -14,7 +15,6 @@ const HomePage = () => {
       <Container>
         <img alt="Rocket image" src={image} />
         <div>
-          <h2>Games</h2>
           <GamesCell />
         </div>
       </Container>
