@@ -4,6 +4,7 @@ export const schema = gql`
     title: String!
     bgglink: String!
     createdAt: DateTime!
+    completed: String!
   }
 
   type Query {
@@ -14,11 +15,13 @@ export const schema = gql`
   input CreateGameInput {
     title: String!
     bgglink: String!
+    completed: String!
   }
 
   input UpdateGameInput {
     title: String
     bgglink: String
+    completed: String!
   }
 
   type Mutation {

@@ -4,3 +4,5 @@
 # Read more about conflict resolution here: TODO
 
 20200429014202-create-game
+20200519212048-add-completed-field
+20200519213619-change-completed-from-int-to-string

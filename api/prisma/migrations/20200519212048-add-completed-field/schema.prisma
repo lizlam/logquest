@@ -1,6 +1,6 @@
 datasource DS {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url = "***"
 }
 
 generator client {
@@ -16,7 +16,7 @@ model Game {
   id Int @id @default(autoincrement())
   title String
   bgglink String
-  completed String @default("0")
+  completed Int @default(0)
   createdAt DateTime @default(now())
 }
 

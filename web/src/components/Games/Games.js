@@ -54,7 +54,9 @@ const GamesList = ({ games }) => {
               key={game.id}
               className="odd:bg-gray-100 even:bg-white border-t"
             >
-              <td className="p-3"><Card title={truncate(game.title)} bgglink={game.bgglink} /></td>
+              <td className="p-3">
+                <Card {...game} title={truncate(game.title)} />
+              </td>
               <td className="p-3">{timeTag(game.createdAt)}</td>
               <td className="p-3 pr-4 text-right whitespace-no-wrap">
                 <nav>

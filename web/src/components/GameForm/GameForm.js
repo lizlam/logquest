@@ -59,7 +59,19 @@ const GameForm = (props) => {
           validation={{ required: true }}
         />
         <FieldError name="bgglink" className={CSS.errorMessage} />
-
+        <Label
+          name="completed"
+          className={CSS.label}
+          errorClassName={CSS.labelError}
+        />
+        <TextField
+          name="completed"
+          defaultValue={props.game?.completed}
+          className={CSS.input}
+          errorClassName={CSS.inputError}
+          validation={{ required: true }}
+        />
+        <FieldError name="completed" className={CSS.errorMessage} />
         <div className="mt-8 text-center">
           <Submit
             disabled={props.loading}
