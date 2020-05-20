@@ -1,14 +1,20 @@
 import styled from 'styled-components'
+import { Link, routes } from '@redwoodjs/router'
 
 const Navbar = styled.nav`
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: steelblue;
   color: white;
+`
+
+const StyledLink = styled(Link)`
+  color: white;
+  text-decoration: none;
 `;
 
 const HomeLayout = ({ children }) => {
@@ -17,16 +23,16 @@ const HomeLayout = ({ children }) => {
       <header>
         <Navbar>
           <ul>
-            <li> 
-               Home 
+            <li>
+              <StyledLink to={routes.home()}>Home</StyledLink>
             </li>
             <li>
-               About 
+              <StyledLink to={routes.about()}>About</StyledLink>
             </li>
-          </ul> 
+          </ul>
         </Navbar>
-      </header> 
-      {children} 
+      </header>
+      {children}
     </>
   )
 }
