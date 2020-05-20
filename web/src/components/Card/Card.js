@@ -48,9 +48,6 @@ const Card = (props) => {
           min={0}
           max={10}
           value={props.completed}
-          optimum={'5'}
-          high={'8'}
-          low={'4'}
         ></StyledMeter>
       </InnerDiv>
     </Container>

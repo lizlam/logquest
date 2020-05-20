@@ -1,11 +1,11 @@
-# Redwood
+# Log Quest 
+Log how many times you play your board games.
+A side project to learn about RedwoodJS.
+
 >**HEADS UP:** RedwoodJS is _NOT_ ready for use in Production. It relies heavily on Prisma2, which is currently in testing with an expected production release coming soon. See status at ["Is Prisma2 Ready?"](https://isprisma2ready.com)
 
-## Getting Started
-- [Redwoodjs.com](https://redwoodjs.com): home to all things RedwoodJS.
-- [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
-- [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.   
+## Illustrations 
+Illustrations are by [Lukas Adam](https://lukaszadam.com/).
 
 ### Setup
 

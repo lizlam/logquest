@@ -1,3 +1,4 @@
+import { Link, routes } from '@redwoodjs/router'
 import image from 'web/public/images/rocket.png'
 import styled from 'styled-components'
 import GamesCell from 'src/components/GamesCell'
@@ -13,7 +14,9 @@ const HomePage = () => {
   return (
     <HomeLayout>
       <Container>
-        <img alt="Rocket image" src={image} />
+        <Link to={routes.newGame()}>
+          <img alt="Rocket image" src={image} />
+        </Link>
         <div>
           <GamesCell />
         </div>

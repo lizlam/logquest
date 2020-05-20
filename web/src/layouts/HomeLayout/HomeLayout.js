@@ -10,6 +10,7 @@ const Navbar = styled.nav`
   width: 100%;
   background-color: steelblue;
   color: white;
+  z-index: 3;
 `
 
 const StyledLink = styled(Link)`
