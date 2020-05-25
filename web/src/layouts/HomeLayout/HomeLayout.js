@@ -16,7 +16,10 @@ const Navbar = styled.nav`
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
-`;
+  &:hover {
+    color: lightgrey;
+  }
+`
 
 const HomeLayout = ({ children }) => {
   return (
